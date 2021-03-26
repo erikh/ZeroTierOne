@@ -1,3 +1,6 @@
+# DO NOT USE THIS REPO
+
+
 ZeroTier - Global Area Networking
 ======
 

@@ -1,0 +1,4 @@
+# vim: ft=dockerfile
+FROM centos:latest
+
+RUN yum groupinstall 'Development Tools' -y
