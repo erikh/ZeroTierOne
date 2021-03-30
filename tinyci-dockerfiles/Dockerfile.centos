@@ -1,0 +1,5 @@
+# vim: ft=dockerfile
+FROM centos:latest
+
+RUN yum groupinstall 'Development Tools' -y
+RUN curl -sSf https://sh.rustup.rs | sh -s -- -y

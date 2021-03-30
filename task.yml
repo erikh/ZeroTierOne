@@ -1,0 +1,33 @@
+---
+mountpoint: "/build/ZeroTierOne"
+runs:
+  centos:
+    image: "registry:5000/zerotierone-edge-test:centos"
+    command: [ "bash", "tinyci-build.sh" ]
+  test/centos:
+    image: "registry:5000/zerotierone-edge-test:centos"
+    command: [ "bash", "tinyci-test.sh" ]
+  debian:
+    image: "registry:5000/zerotierone-edge-test:debian"
+    command: [ "bash", "tinyci-build.sh" ]
+  ubuntu-20.04:
+    image: "registry:5000/zerotierone-edge-test:ubuntu20.04"
+    command: [ "bash", "tinyci-build.sh" ]
+  ubuntu-20.10:
+    image: "registry:5000/zerotierone-edge-test:ubuntu20.10"
+    command: [ "bash", "tinyci-build.sh" ]
+  ubuntu-18.04:
+    image: "registry:5000/zerotierone-edge-test:ubuntu18.04"
+    command: [ "bash", "tinyci-build.sh" ]
+  test/debian:
+    image: "registry:5000/zerotierone-edge-test:debian"
+    command: [ "bash", "tinyci-test.sh" ]
+  test/ubuntu-20.04:
+    image: "registry:5000/zerotierone-edge-test:ubuntu20.04"
+    command: [ "bash", "tinyci-test.sh" ]
+  test/ubuntu-20.10:
+    image: "registry:5000/zerotierone-edge-test:ubuntu20.10"
+    command: [ "bash", "tinyci-test.sh" ]
+  test/ubuntu-18.04:
+    image: "registry:5000/zerotierone-edge-test:ubuntu18.04"
+    command: [ "bash", "tinyci-test.sh" ]
