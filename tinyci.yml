@@ -1,0 +1,3 @@
+merge:
+  independent_branches:
+    - refs/heads/edge
