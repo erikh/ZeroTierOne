@@ -1,0 +1,3 @@
+merge_options:
+  ignore_refs:
+    - heads/edge
