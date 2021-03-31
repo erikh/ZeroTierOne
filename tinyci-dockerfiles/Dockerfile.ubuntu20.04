@@ -1,5 +1,8 @@
 # vim: ft=dockerfile
 FROM ubuntu:20.04
 
-RUN apt-get update && apt-get install build-essential curl -y
+ENV TZ=Etc/UTC DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install build-essential curl cmake clang libclang-dev -y
 RUN curl -sSf https://sh.rustup.rs | sh -s -- -y
+RUN bash -c ". $HOME/.cargo/env && cargo install bindgen"
